@@ -6,8 +6,6 @@ import (
 	"net/http"
 	"strconv"
 
-	restErrors "github.com/dmytrodemianchuk/crud-api/pkg/rest/errors"
-
 	"github.com/dmytrodemianchuk/crud-api/internal/domain"
 	"github.com/gin-gonic/gin"
 )

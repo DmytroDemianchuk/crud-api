@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/dmytrodemianchuk/internal/domain"
+	"github.com/dmytrodemianchuk/crud-api/internal/domain"
 	"github.com/dmytrodemiancuk/crud-api/internal/repository/models"
 )
 
