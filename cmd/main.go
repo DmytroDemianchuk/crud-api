@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/dmytrodemianchuk/crud-api/internal/repository"
 	"github.com/dmytrodemianchuk/crud-api/internal/service"
 	"github.com/dmytrodemianchuk/crud-api/internal/transport/rest"
 	"github.com/dmytrodemianchuk/crud-api/pkg/database"
@@ -27,10 +28,10 @@ func main() {
 	}
 	defer db.Close()
 
-	// init deps
-	booksRepo := psql.NewBooks(db)
-	booksService := service.NewBooks(booksRepo)
-	handler := rest.NewHandler(booksService)
+	// // init deps
+	musicsRepo := repository.NewMusic(db)
+	musicService := service.NewMusic(musicsRepo)
+	handler := rest.NewMusic(musicService)
 
 	// init & run server
 	srv := &http.Server{
