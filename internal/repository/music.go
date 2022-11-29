@@ -5,7 +5,7 @@ import (
 	"database/sql"
 
 	"github.com/dmytrodemianchuk/crud-api/internal/domain"
-	"github.com/dmytrodemiancuk/crud-api/internal/repository/models"
+	"github.com/dmytrodemianchuk/crud-api/internal/repository/models"
 )
 
 type Books struct {
