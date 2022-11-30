@@ -1,6 +1,6 @@
 package models
 
-import "github.com/lukinairina90/crud_movies/internal/domain"
+import "github.com/dmytrodemianchuk/crud-api/internal/domain"
 
 type Music struct {
 	ID          int64  `json:"id"`
@@ -10,8 +10,8 @@ type Music struct {
 	Genre       string `json:"genre"`
 }
 
-func (m Music) ToDomain() domain.Movie {
-	return domain.Movie{
+func (m Music) ToDomain() domain.Music {
+	return domain.Music{
 		ID:          m.ID,
 		Name:        m.Name,
 		Performer:   m.Performer,
